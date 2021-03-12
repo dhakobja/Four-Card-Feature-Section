@@ -1,3 +1,120 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Dark-Blue: hsl(234, 12%, 34%);
+  --Gray-Blue: hsl(229, 6%, 66%);
+  --Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: var(--Light-Gray);
+  padding: 2rem;
+  margin-top: 2.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--Dark-Blue);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.top_block p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.top_block p,
+.left_block p,
+.top p,
+.bottom p,
+.right_block p {
+  font-weight: 300;
+  color: var(--Gray-Blue);
+  line-height: 1.8;
+}
+
+.left_block,
+.top,
+.bottom,
+.right_block {
+  display: flex;
+  flex-flow: column;
+  border: 0.3rem solid;
+  border-radius: 0.5rem;
+  border-color: var(--Light-Gray);
+  box-shadow: 0px 16px 17px -16px var(--Gray-Blue);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.left_block h3,
+.top h3,
+.bottom h3,
+.right_block h3 {
+  font-size: 1.2rem;
+  color: var(--Dark-Blue);
+}
+
+.left_block p,
+.top p,
+.bottom p,
+.right_block p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.left_block p,
+.top p,
+.bottom p,
+.right_block p {
+  font-weight: 300;
+}
+
+.left_block img,
+.top img,
+.bottom img,
+.right_block img {
+  width: 3.5rem;
+  align-self: flex-end;
+}
+
+.left_block {
+  border-top-color: var(--Cyan);
+}
+
+.top {
+  border-top-color: var(--Red);
+}
+
+.bottom {
+  border-top-color: var(--Orange);
+}
+
+.right_block {
+  border-top-color: var(--Blue);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
